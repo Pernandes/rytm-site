@@ -23,13 +23,13 @@ ou rode `python -m http.server` na pasta e acesse http://localhost:8000.
 
 ## Como trocar o instalador de uma nova versão
 
-Os botões "Baixar" apontam para o instalador na pasta pública do Google Drive.
+Os botões "Baixar" baixam o instalador direto do site, da pasta `download/`
+(o arquivo `_headers` força o download em vez de abrir no navegador).
 
-1. Suba o novo `.exe` na pasta do Drive (ela já está compartilhada como
-   "qualquer pessoa com o link").
-2. Copie o ID do arquivo (o trecho entre `/d/` e `/view` no link de
-   compartilhamento).
-3. No `index.html`, troque o ID antigo pelo novo nos 3 botões
-   (procure por `drive.usercontent.google.com`) e atualize o texto
-   "Versão ..." perto do fim da página.
-4. Commit e push no `main`.
+1. Coloque o novo `.exe` em `download/` e apague o antigo.
+2. No `index.html`, troque o nome do arquivo nos 3 botões
+   (procure por `/download/Rytm_`) e atualize o texto "Versão ..."
+   perto do fim da página.
+3. Commit e push no `main`.
+
+Limite do Cloudflare Pages: 25 MB por arquivo.
