@@ -5,36 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de privacidade · Rytm</title>
 <link rel="stylesheet" href="estilo.css">
+<link rel="alternate" hreflang="en" href="privacy.html">
 </head>
 <body>
 <main>
   <a class="voltar" href="./">← Rytm</a>
   <h1>Política de privacidade</h1>
-  <p class="sub">Última atualização: 30 de outubro de 2026</p>
+  <p class="sub">Última atualização: 5 de novembro de 2026 · <a href="privacy.html" lang="en">English version</a></p>
 
   <p>O Rytm é um app para Windows de tarefas e cronômetro. Esta página explica quais dados ele usa, onde eles ficam e como remover o acesso.</p>
 
   <h2>Onde seus dados ficam</h2>
-  <p>Tudo o que você cria no Rytm (tarefas, notas, comentários, anexos, histórico de tempo, gravações e configurações) fica no seu computador. Não existe servidor do Rytm: nenhum dado seu é enviado ao desenvolvedor nem a terceiros. O app não tem anúncios nem coleta estatísticas de uso.</p>
+  <p>Tudo o que você cria no Rytm (tarefas, notas, comentários, anexos, eventos, histórico de tempo, gravações e configurações) fica no seu computador. Não existe servidor do Rytm: nenhum dado seu é enviado ao desenvolvedor nem a terceiros. O app não tem anúncios nem coleta estatísticas de uso.</p>
 
-  <h2>Sincronização pelo Google Drive (opcional)</h2>
-  <p>Se você conectar uma conta Google, o Rytm guarda uma cópia dos seus dados numa pasta chamada <b>Rytm</b> no <b>seu próprio</b> Google Drive, para manter seus computadores iguais.</p>
+  <h2>Conta Google</h2>
+  <p>A sincronização pelo Google Drive e a integração com o Google Agenda são opcionais e ficam desligadas até você ligar cada uma nas Configurações. Cada recurso pede só a própria permissão, no momento em que você o liga.</p>
   <ul>
-    <li>O Rytm pede só a permissão <code>drive.file</code>: ele enxerga apenas os arquivos que ele mesmo criou. Os outros arquivos do seu Drive ficam inacessíveis para ele.</li>
-    <li>Ele também lê o nome e o e-mail da conta conectada, só para mostrar nas Configurações qual conta está em uso.</li>
-    <li>Os dados vão direto do seu computador para o seu Drive, pelos serviços do Google.</li>
+    <li>O Rytm lê o e-mail (e, com o Drive, o nome) da conta conectada, só para mostrar nas Configurações qual conta está em uso.</li>
+    <li>Os dados vão direto do seu computador para a sua conta Google, pelos serviços do Google.</li>
     <li>O acesso à conta fica guardado no Gerenciador de Credenciais do Windows, no seu computador.</li>
   </ul>
-  <p>O uso e a transferência de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário dos serviços de API do Google</a>, incluindo os requisitos de uso limitado. Os dados não são vendidos, compartilhados nem usados para anúncios ou para treinar modelos de IA.</p>
+
+  <h2>Sincronização pelo Google Drive</h2>
+  <p>Se você ligar a sincronização, o Rytm guarda uma cópia dos seus dados numa pasta chamada <b>Rytm</b> no <b>seu próprio</b> Google Drive, para manter seus computadores iguais.</p>
+  <ul>
+    <li>O Rytm pede só a permissão <code>drive.file</code>: ele enxerga apenas os arquivos que ele mesmo criou. Os outros arquivos do seu Drive ficam inacessíveis para ele.</li>
+  </ul>
+
+  <h2 id="google-agenda">Google Agenda</h2>
+  <p>Se você conectar o Google Agenda (Configurações › Calendário), o Rytm usa estas permissões:</p>
+  <ul>
+    <li><code>calendar.app.created</code>: o Rytm cria na sua conta uma agenda própria chamada <b>Rytm</b> e cria, altera e exclui eventos <b>só nessa agenda</b>. Vão para ela os eventos do Calendário do Rytm (título, data e horário, local, descrição, repetição e lembretes) e, se você ligar essa opção, os prazos das suas tarefas (título da tarefa e prazo). Os lembretes por e-mail e notificação são enviados pelo próprio Google Agenda. Mudanças que você fizer nessa agenda pelo Google voltam para o Rytm. O Rytm não grava nas suas outras agendas.</li>
+    <li><code>calendar.calendarlist.readonly</code> e <code>calendar.events.readonly</code>: pedidas só se você ligar "Mostrar minhas outras agendas". O Rytm lê a lista das suas agendas, para você escolher quais aparecem, e os eventos das agendas escolhidas (título, horário e local), para mostrar no Calendário do Rytm. É só leitura: o Rytm nunca altera esses eventos. Eles ficam guardados no seu computador para aparecer sem internet.</li>
+  </ul>
+  <p>Desconectar o Google Agenda no Rytm não apaga a agenda "Rytm" da sua conta. Para apagá-la, use o Google Agenda (configurações da agenda › Remover agenda).</p>
+
+  <h2>Uso limitado dos dados do Google</h2>
+  <p>O uso e a transferência de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário dos serviços de API do Google</a>, incluindo os requisitos de uso limitado. Os dados do Google são usados só para oferecer os recursos descritos acima, para você. Eles não são enviados ao desenvolvedor nem a terceiros, não são vendidos, não são usados para anúncios nem para treinar modelos de IA, e ninguém os lê.</p>
+
+  <h2>Clima no Início</h2>
+  <p>Para mostrar o clima, o Rytm consulta o serviço gratuito <a href="https://open-meteo.com">Open-Meteo</a>. Ele envia o nome da cidade que você digita na busca e as coordenadas da cidade escolhida. Nenhum dado da sua conta é enviado. Como em qualquer acesso à internet, o serviço vê o endereço IP do computador.</p>
+
+  <h2>Atualizações</h2>
+  <p>O Rytm confere se há versão nova numa pasta pública do Google Drive do desenvolvedor, sem login e sem enviar dados seus.</p>
 
   <h2>Gravações de reunião</h2>
   <p>A transcrição das reuniões acontece no seu computador, sem mandar o áudio para a internet. O áudio só vai para o seu Drive se a sincronização estiver ligada.</p>
 
   <h2>Como remover o acesso e os dados</h2>
   <ul>
-    <li>No Rytm: Configurações › Sincronização › desconectar.</li>
+    <li>No Rytm: Configurações › Sincronização ou Configurações › Calendário › desconectar.</li>
     <li>Na sua conta Google: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> › Rytm › Remover acesso.</li>
-    <li>Para apagar a cópia no Drive, exclua a pasta Rytm. Para apagar os dados do computador, desinstale o Rytm e apague a pasta <code>%APPDATA%\com.pedro.rytm</code>.</li>
+    <li>Para apagar a cópia no Drive, exclua a pasta Rytm. Para apagar a agenda, remova a agenda Rytm no Google Agenda. Para apagar os dados do computador, desinstale o Rytm e apague a pasta <code>%APPDATA%\com.pedro.rytm</code>.</li>
   </ul>
 
   <h2>Contato</h2>

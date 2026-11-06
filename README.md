@@ -11,6 +11,7 @@ Site estático em HTML, CSS e JavaScript puro: não há build nem dependências.
 | `script.js` | Demonstração interativa (ilha, janela do app, cronômetro, scroll suave) |
 | `favicon.svg` | Ícone da aba |
 | `privacidade.html` + `estilo.css` | Política de privacidade (rytm.work/privacidade.html) |
+| `privacy.html` | Versão em inglês da política (rytm.work/privacy.html), usada na verificação do Google. Mantenha as duas iguais |
 
 ## Como atualizar o site
 
